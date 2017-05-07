@@ -205,7 +205,7 @@ section.hero section.left {
     display: block;
     height: inherit;
     width: 50%;
-    background: blue;
+    /*background: blue;*/
 }
 
 .hero .anime-image-wrapper{
@@ -216,33 +216,63 @@ section.hero section.left {
 .hero .anime-image-wrapper #plane{
    height: 10vh;
    display: block;
-   margin-left: 576px;
-   margin-top: 50px;
+   margin-left: 590px;
+   margin-top: 70px;
+}
+
+/*#plane { transition: all 0.3s ease-in-out 0s; }*/
+
+#plane:hover
+{
+    cursor: default;
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out 0s;
 }
 
 
 .hero .anime-image-wrapper #travel{
    height: 10vh;
    display: block;
-   margin-left: 576px;
+   margin-left: 600px;
    margin-top: 90px;
 
+}
+
+#travel:hover
+{
+    cursor: default;
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out 0s;
 }
 
 .hero .anime-image-wrapper #chat{
    height: 11vh;
    display: block;
-   margin-left: 576px;
+   margin-left: 600px;
    margin-top: 90px;
-
 }
+
+#chat:hover
+{
+    cursor: default;
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out 0s;
+}
+
 
 .hero .anime-image-wrapper #friends{
    height: 07vh;
    display: block;
-   margin-left: 576px;
+   margin-left: 600px;
    margin-top: 90px;
 
+}
+
+#friends:hover
+{
+    cursor: default;
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out 0s;
 }
 
 
@@ -251,7 +281,7 @@ section.hero section.right {
     display: block;
     height: inherit;
     width: 50%;
-    background: red;
+    /*background: red;*/
 }
 
 
