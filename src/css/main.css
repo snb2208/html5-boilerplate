@@ -105,10 +105,7 @@ section.head{
 
 
 section h1{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 48px;
-    margin: 10px;
-    color: white;
+        margin: 10px;
 }
 
 /*section.Hill-image img{
@@ -117,8 +114,30 @@ section h1{
 
 }*/
 
+section.head>div{
+    height: 50px;
+}
 
+div.left{
+    display: inline-block;
+    float: left;
+    width: 25%;
 
+}
+
+section.head h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 48px;
+    color: white;
+    margin: 10px;
+    margin-top: 3px;
+}
+
+div.right{
+    display: inline-block;
+    width: 75%;
+    text-align: right;
+}
 
 section.hero h2 {
     position: relative;
@@ -131,8 +150,10 @@ section.hero h2 {
 
 section.menu-icon{
     position: relative;
-    top: -55px;
-    right: -1350px;
+    width: 35px;
+    margin: 15px;
+    height: auto;
+    float: right;
 }
 
 section.menu-icon div: hover{
@@ -156,10 +177,14 @@ footer li{
 
 footer{
     text-align: center;
+    align-self: center;
     padding: 10 px;
 }
 
-
+a{
+    color: #3F51B5;
+    text-decoration: none;
+}
 section.hero section.left img{
 
     float: left;
@@ -183,6 +208,44 @@ section.hero section.left {
     background: blue;
 }
 
+.hero .anime-image-wrapper{
+    position: absolute;
+}
+
+
+.hero .anime-image-wrapper #plane{
+   height: 10vh;
+   display: block;
+   margin-left: 576px;
+   margin-top: 50px;
+}
+
+
+.hero .anime-image-wrapper #travel{
+   height: 10vh;
+   display: block;
+   margin-left: 576px;
+   margin-top: 90px;
+
+}
+
+.hero .anime-image-wrapper #chat{
+   height: 11vh;
+   display: block;
+   margin-left: 576px;
+   margin-top: 90px;
+
+}
+
+.hero .anime-image-wrapper #friends{
+   height: 07vh;
+   display: block;
+   margin-left: 576px;
+   margin-top: 90px;
+
+}
+
+
 section.hero section.right {
     float: left;
     display: block;
@@ -204,33 +267,56 @@ section.hero section.right2{
 }
 
 
-section.hero section.right img#phone{
-    
+
+.download-buttons{
+    float: right;
 }
 
-section.hero section.right2 img#button1{
+.download-buttons #button1{
+    height: 15vh;
+    margin-top: 375px;
+    margin-left: 0px;
 
-    height:15vh;
-    left: 30px;
-    
 }
 
-section.hero section.right2 img#button2{
+.download-buttons #button2{
     height: 10vh;
-    left: 20px;
     display: block;
-
+    margin-left: 20px;
+    
 }
 
 
-section.hero section.right section.video video{
+
+
+/*section.hero section.right section.video video{
     width: 40%;
-   
+    top: -30px;
+}*/
+
+.phone-video-wrapper {
+    position: relative;
+    margin-top: 6px;
+    margin-left: -12px;
 }
 
-section.hero section.right section.video{
-    top: -30px;
+.phone-video-wrapper #phone{
+    position: absolute;
 }
+
+.phone-video-wrapper #video_container{
+    position: absolute;
+    width: 262px;
+    top: 133px;
+    left: 113px;
+}
+
+.phone-video-wrapper #video_container video{
+    width: 100%;
+    height: auto;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

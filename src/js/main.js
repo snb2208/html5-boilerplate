@@ -3,14 +3,15 @@ console.log('Hello world!');
 
 $(document).ready(function() {
 	console.log('ready');
-	var headerHeight = $('header').height();
-	console.log(headerHeight);
+	var headerHeight = null;
+	var docHeight = null;
+
 });
 
-$(document).resize(function() {
+$(window).resize(function() {
 	console.log('resize');
 });
 
-$(document).scroll(function() {
+$(window).scroll(function() {
 	console.log('scroll');
 });

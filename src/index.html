@@ -7,6 +7,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
@@ -22,7 +23,7 @@
 
 
 
-        <section class="head">
+        <!--     <section class="head">
             <h1>TRAX</h1>
 
             <section class="menu-icon">
@@ -31,7 +32,22 @@
                 <div></div>
             </section>
 
+        </section>  -->
+
+
+        <section class="head">
+            <div class="left">
+            <h1>TRAX</div>
+            </div>
+            <div class="right">
+                <section class="menu-icon">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </section>
+            </div>
         </section>
+
 
 
         <section class="hero">
@@ -40,46 +56,43 @@
                 <h2><i>TRAVEL.</br>CONNECT.</br>SOCIALIZE.</i></h2>
             </section>
 
-            <section class="right">
+            
+            <div class="anime-image-wrapper">
+            <!--Images that should move-->
 
-            <!--Images that should move
-               <img src="img/plane.gif" />
-               <img src="img/travel2.gif" />
-                <img src="img/chat.png" />
-                <img src="img/friends.png" /> -->
+                <img id="plane" src="img/plane.gif" />
+                <img id="travel" src="img/travel2.gif" />
+                <img id="chat" src="img/msg.png" />
+                <img id="friends" src="img/friends.png" /> 
 
-               <img id="phone" src="img/phoneSilver.png" /> 
-               <section class="video">
-                    <video width="300" height="760" autoplay controls>
+            </div>
+
+            <section class="right">    
+
+            <div class="phone-video-wrapper">
+               <div id="video_container">
+                    <video autoplay controls>
                         <source src="video/wireframeVid.mp4" type="video/mp4">
                         Your browser does not support the video.
                     </video>
+               </div>
+               <img id="phone" src="img/phoneSilver.png" /> 
+            </div>
 
-
-               </section>
-            </section>
-
-
-
-            <section class="right2">
-                <!--Download buttons
-                -->
+            <div class="download-buttons" >
                 <img id="button1" src="img/playstore_button.png" />
                 <img id="button2" src="img/appstore_button.png" /> 
+            </div>
 
             </section>
+
+
+            
+
         </section>
         
 
       
-
-
-        
-
-        
-
-
-       
 
         <footer>
             <ul>
@@ -96,10 +109,12 @@
         <!-- Add your site or application content here -->
         
         <!--<script src="https://code.jquery.com/jquery-{{JQUERY_VERSION}}.min.js" integrity="{{JQUERY_SRI_HASH}}" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script> -->
-        <script src="jjs/vendor/jquery-3.2.1.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-{{JQUERY_VERSION}}.min.js"><\/script>')</script>-->
+        
+        <script src="js/vendor/jquery-3.2.1.js"></script> <!--has to be before the main js-->
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>
