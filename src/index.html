@@ -34,21 +34,30 @@
 
         </section>  -->
 
-
+        
         <section class="head">
             <div class="left">
-            <h1>TRAX</div>
+                <h1>TRAX</div>
             </div>
             <div class="right">
-                <section class="menu-icon">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </section>
+                <div class="hamburger">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
             </div>
         </section>
 
-
+        <nav class="menu">
+            <ul>
+                <li><a href="#">About Trax</a></li>
+                <li><a href="#">Read our Blog</a></li>
+                <li><a href="#">What we do</a></li>
+                <li><a href="#">Stories from Trax users</a></li>
+                <li><a href="#">Talk to us</a></li>
+                <li><a href="#">Spread the word</a></li>
+            </ul>
+        </nav>
 
         <section class="hero">
             <section class="left">
@@ -67,7 +76,7 @@
 
             </div>
 
-            <section class="right">    
+            <section class="right">   
 
             <div class="phone-video-wrapper">
                <div id="video_container">
@@ -84,10 +93,8 @@
                 <img id="button2" src="img/appstore_button.png" /> 
             </div>
 
+
             </section>
-
-
-            
 
         </section>
         
@@ -97,7 +104,7 @@
         <footer>
             <ul>
 
-                <li><a href="#/About Us">About Us</a></li>
+                <li><a href="#/About">About Us</a></li>
                 <li><a href="#/Blog">Blog</a></li>
                 <li><a href="#/Contact Us">Contact Us</a></li>
                 <li><a href="#/Terms">Terms</a></li>
@@ -115,11 +122,18 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         
+        <script type="text/javascript">
+
+          function myFunctionMenu(x) {
+                x.classList.toggle("change");
+            }  
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <script>
             window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
             ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+
         </script>
         <script src="https://www.google-analytics.com/analytics.js" async defer></script>
     </body>
