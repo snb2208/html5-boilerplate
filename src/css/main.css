@@ -148,9 +148,9 @@ nav.menu {
     left: 0;
     right: 0;*/
     background-color: #3F51B5;
-    opacity: 20%;
+    opacity: 0.95;
     width: 45%;
-    height: 80vh;
+    height: 85vh;
     z-index: 9998;
 }
 
@@ -227,12 +227,16 @@ section.hero h2 {
 
 
 
-
-
-
-
-
-
+.message {
+    position: absolute;
+    right: 120px;
+    top: 200px;
+    display: none;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    transition: 0.3s;
+}
 
 
 
@@ -311,6 +315,7 @@ section.hero section.left {
     cursor: default;
     transform: rotate(360deg);
     transition: all 0.5s ease-in-out 0s;
+
 }
 
 .hero .anime-image-wrapper #chat{

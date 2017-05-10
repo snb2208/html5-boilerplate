@@ -14,9 +14,20 @@ $( ".hamburger" ).click(function() {
 });
 
 
-$('x').click(function(){
-	x.hide();
-});
+$(".anime-image-wrapper img").hover(hoverIn, hoverOut);
+
+function hoverIn(){
+	var hoveredId = $(this).attr('id');
+	var messageClass = '.message-' + hoveredId;
+	$(messageClass).show();
+}
+
+function hoverOut(){
+	var hoveredId = $(this).attr('id');
+	var messageClass = '.message-' + hoveredId;
+	$(messageClass).hide();
+}
+
 
 
 $(document).ready(function() {
