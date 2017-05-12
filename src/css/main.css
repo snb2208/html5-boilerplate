@@ -93,8 +93,17 @@ body{
     #EBE7E7
 }
 
+section.home{
 
+    height: 100vh;
+}
 
+section.about{
+
+    height: 100vh;
+    background: #3F51B5;
+    margin: 10px 0;
+}
 
 section.head{
     background: #3F51B5;
@@ -104,11 +113,22 @@ section.head{
     height:70px;
     position: relative;
     z-index: 9999;
+    top: 0;
    
 }
 
+.fixed{
+    position: fixed;
+    top:0;
+    background: #3F51B5;
+    width: 100%;
+    opacity: 80%;
+    height:70px;
+    z-index: 9999;
+}
 
-section h1{
+
+.head h1{
         margin: 10px;
 }
 
@@ -306,7 +326,7 @@ section.hero section.left {
    height: 10vh;
    display: block;
    margin-left: 600px;
-   margin-top: 90px;
+   margin-top: 80px;
 
 }
 
@@ -370,7 +390,6 @@ section.hero section.right2{
 }
 
 
-
 .download-buttons{
     float: right;
 }
@@ -379,6 +398,7 @@ section.hero section.right2{
     height: 15vh;
     margin-top: 375px;
     margin-left: 0px;
+    cursor: pointer;
 
 }
 
@@ -390,12 +410,6 @@ section.hero section.right2{
 }
 
 
-
-
-/*section.hero section.right section.video video{
-    width: 40%;
-    top: -30px;
-}*/
 
 .phone-video-wrapper {
     position: relative;
@@ -417,6 +431,104 @@ section.hero section.right2{
 .phone-video-wrapper #video_container video{
     width: 100%;
     height: auto;
+}
+
+/*.phone-video-wrapper {
+    position: relative;
+    margin-top: 0.375em;
+    margin-left: -0.75em;
+}
+
+.phone-video-wrapper #phone{
+    position: absolute;
+}
+
+.phone-video-wrapper #video_container{
+    position: absolute;
+    width: 16.375em;
+    top: 8.3125em;
+    left: 7.0625em;
+}
+*/
+
+
+.footer-arrow {
+    position: relative;
+}
+
+@keyframes bouncing {
+    0% {bottom: 0;}
+    50% {bottom: 20px;}
+    100% {bottom: 0;}
+}
+
+.arrow {
+    animation: bouncing 1s infinite ease-in-out;
+    bottom: 0;
+    display: block;
+    height: 50px;
+    left: 50%;
+    margin-left: -25px;
+    position: absolute;
+    width: 50px;
+}
+
+.boxed{
+    margin-left: 20%;
+    margin-right: 20%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: white;
+    margin-top: 23%;
+    position: absolute;
+    padding: 10px;
+}
+
+.boxed p{
+
+    color: white;
+    text-align: center;
+    font-family: 'Source Sans Pro Light', sans-serif;
+    font-size: 22px;
+    font-weight: lighter;
+    vertical-align: middle;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+
+.about{
+    position: relative;
+}
+
+.team-images{
+    position: absolute;
+}
+
+.team-images img#sin{
+    
+    width: 18vh;
+    margin-left: 35%;
+    margin-top: 40%;
+
+
+}
+.team-images img#ass{
+    width: 22vh;
+    margin-left: 350%;
+    margin-top: 20%;
+    
+}
+
+.about h2{
+    position: absolute;
+    text-align: center;
+    color: white;
+    margin-top: 18%;
+    margin-left: 45%;
+    font-family: 'Source Sans Pro Light', sans-serif;
+    font-size: 30px;
 }
 
 
