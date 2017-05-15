@@ -33,6 +33,13 @@ function hoverOut(){
 	$(messageClass).hide();
 }
 
+$(".menu").click(function(){
+	$(".menu").hide();
+	$(".hamburger").toggleClass("change");
+
+});
+
+
 
 
 
@@ -40,37 +47,36 @@ function hoverOut(){
 
 $(document).ready(function() {
 	console.log('ready');
-	/*var headerHeight = $('head').outerHeight();
+	
+});	
 
-	$(window).bind('scroll', function () {
-    if ($(window).scrollTop() > 70) {
-        $('.top-menu').addClass('fixed');
-    } else {
-        $('.top.menu').removeClass('fixed');
-    }
-});*/
-
-	$(window).bind('scroll', function () {
-    var menu = $('.head');
-    if ($(window).scrollTop() > menu.offset().top) {
-        menu.addClass('fixed');
-    } else {
-        menu.removeClass('fixed');
-    }
-});
-
-
-});
 
 $(window).resize(function() {
 	console.log('resize');
 });
 
+var menuHeight = $('.head').height();
+
 $(window).scroll(function() {
-	console.log('scroll');
-});
+	var scrollAmount = $(window).scrollTop();
+    
+
+}); 
 
 
+/*if(options.normalScrollElements){
+	                 $document.on('mouseenter touchstart', options.normalScrollElements, function () {
+	                     setAllowScrolling(false);
+	                 $document.on('mouseenter', options.normalScrollElements, function () {
+	                     setMouseWheelScrolling(false);
+	                  });
+	  
+	                 $document.on('mouseleave touchend', options.normalScrollElements, function(){
+	                    setAllowScrolling(true);
+	                $document.on('mouseleave', options.normalScrollElements, function(){
+	                    setMouseWheelScrolling(true);
+	                  });
+	              }
+          }
 
-
-
+*/
