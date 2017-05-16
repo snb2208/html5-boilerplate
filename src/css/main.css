@@ -94,13 +94,11 @@ body{
 }
 
 section.home{
-
     height: 100vh;
     margin: 10px 0;
 }
 
 section.about{
-
     height: 100vh;
     background: #3F51B5;
     margin-top: 07%;
@@ -396,14 +394,14 @@ section.hero section.right {
 }
 
 
-section.hero section.right2{
+/*section.hero section.right2{
     float: right;
     display: block;
     position:relative;
     top: -350px;
     bottom: 10px;
     
-}
+}*/
 
 
 .download-buttons{
@@ -412,8 +410,8 @@ section.hero section.right2{
 
 .download-buttons #button1{
     height: 15vh;
-    margin-top: 375px;
-    margin-left: 0px;
+    margin-top: 125%;/*375px*/
+    margin-left: 0;
     cursor: pointer;
 
 }
@@ -421,7 +419,7 @@ section.hero section.right2{
 .download-buttons #button2{
     height: 10vh;
     display: block;
-    margin-left: 20px;
+    margin-left: 07%;/*20px*/
     
 }
 
@@ -515,12 +513,22 @@ section.hero section.right2{
     font-size: 18px;
 }
 
-#name{
+.story1 #name{
     font-size: 36px;
     font-family: 'Source Sans Pro', sans-serif;
-    margin-top: -50%;
+    margin-top: -30%;
     margin-left: 190%;
     font-color: black;
+    width: 80%;
+}
+
+.story1 #intro{
+    font size: 24px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: -30%;
+    margin-left: 190%;
+    font-color: black;
+    width: 40%;
 }
 
 /*.story2{
@@ -586,14 +594,14 @@ section.hero section.right2{
     position: absolute;
 }
 
-.team-images img#sin{
+.team-images #sin{
     width: 18vh;
     margin-left: 35%;
     margin-top: 40%;
 
 
 }
-.team-images img#ass{
+.team-images #ass{
     width: 22vh;
     margin-left: 350%;
     margin-top: 30%;
