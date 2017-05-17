@@ -2,10 +2,7 @@ console.log('Hello world!');
 
 
 
-
-
-
-
+//Hamburger menu animate to close button
 $( ".hamburger" ).click(function() {
   $( this ).toggleClass( "change" );
   var isOpen = $(this).hasClass('change');
@@ -18,7 +15,7 @@ $( ".hamburger" ).click(function() {
 });
 
 
-
+//Message display on hover over images
 $(".anime-image-wrapper img").hover(hoverIn, hoverOut);
 
 function hoverIn(){
@@ -41,10 +38,6 @@ $(".menu").click(function(){
 
 
 
-
-
-
-
 $(document).ready(function() {
 	console.log('ready');
 	
@@ -55,7 +48,7 @@ $(window).resize(function() {
 	console.log('resize');
 });
 
-var menuHeight = $('.head').height();
+
 
 $(window).scroll(function() {
 	var scrollAmount = $(window).scrollTop();
@@ -64,19 +57,3 @@ $(window).scroll(function() {
 }); 
 
 
-/*if(options.normalScrollElements){
-	                 $document.on('mouseenter touchstart', options.normalScrollElements, function () {
-	                     setAllowScrolling(false);
-	                 $document.on('mouseenter', options.normalScrollElements, function () {
-	                     setMouseWheelScrolling(false);
-	                  });
-	  
-	                 $document.on('mouseleave touchend', options.normalScrollElements, function(){
-	                    setAllowScrolling(true);
-	                $document.on('mouseleave', options.normalScrollElements, function(){
-	                    setMouseWheelScrolling(true);
-	                  });
-	              }
-          }
-
-*/
