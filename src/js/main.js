@@ -9,10 +9,14 @@ $( ".hamburger" ).click(function() {
   console.log(isOpen)
   if (isOpen) {
   	$('nav.menu').show();
+  	/*$('body').css('overflow', 'hidden');*/
   } else {
   	$('nav.menu').hide();
+
   }
 });
+
+
 
 
 //Message display on hover over images

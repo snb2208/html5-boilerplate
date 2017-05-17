@@ -153,7 +153,7 @@ nav.menu li a{
 nav.menu {
     display: none;
     right: 10px;
-    position: absolute;
+    position: fixed;
     /*top: 0;
     left: 0;
     right: 0;*/
@@ -501,6 +501,7 @@ section.about{
     -moz-background-size: cover;
     -o-background-size: cover;*/
     background-size: cover;
+    width: 100%;
     /*opacity: 0.3;*/
 }
 
@@ -601,12 +602,21 @@ footer a{
         width: 100%;
         position: absolute;
         background-size: cover;
-        
-        
     }
     
     .hero .message {
         display: none;
+    }
+
+     section.hero .download-buttons{
+        margin-top: 25%;
+        margin-right: 3%;
+        position: relative;
+    }
+
+    section.hero .download-buttons #button2{
+        margin-left: 07%;
+
     }
 
     section.hero .overlay{
@@ -615,21 +625,45 @@ footer a{
         height: 100%;
         opacity: 0.6;
         position: absolute;
+       
     }
 
-    section.hero .download-buttons{
-        
-        margin-top: 20%;
-        margin-right: 0%;
-        opacity: 1 !important;
-
-    }
+   
 
     .phone-video-wrapper{
-        
+        width: 70%;
     }
 
-    
+    nav.menu{
+        width: 100%;
+
+    }
+
+    .team-images {
+        display: none;
+    }
+
+    section.about h2{
+        
+        margin-top: 14%;
+        margin-left: 40%;
+    }
+
+
+    .story1{
+        width: 80%;
+        margin-top: 50%;
+    }
+
+    .story1 #intro{
+        margin-top: 17%;
+        margin-left: 25%;
+    }
+
+    .story1 #name{
+        margin-top: -3%;
+        margin-left: 25%;
+    }
 
     footer{
         display: none;
@@ -638,6 +672,7 @@ footer a{
     .footer-arrow{
         display: none;
     }
+
 }
 
 /* ==========================================================================
