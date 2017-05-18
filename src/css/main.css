@@ -432,6 +432,7 @@ section.about{
     height: 100vh;
     background: #3F51B5;
     margin-top: 07%;
+    opacity: 0.9;
 }
 
 .boxed{
@@ -485,6 +486,7 @@ section.about{
     position: absolute;
     text-align: center;
     color: white;
+    font-weight: lighter;
     margin-top: 18%;
     margin-left: 45%;
     font-family: 'Source Sans Pro Light', sans-serif;
@@ -562,6 +564,79 @@ section.about{
     width: 40%;
 }
 
+/*Page 4 styling*/
+section.subscribe{
+    height: 100vh;
+    background: #3F51B5;
+    margin-top: 1rem;
+    opacity: 0.9;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"] {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 2;
+    width: 97.7%;
+    display: block;
+    box-sizing: border-box;
+    margin: 1rem;
+    border: 2px solid #80DEEA;
+    padding: 0.75rem;
+    font-size: 1rem;
+    color: #3F51B5;
+    transition: all 0.125s linear;
+}
+
+input[name="msg"]{
+    line-height: 4;
+}
+input[type="submit"] {
+    border-color: #80DEEA;
+    background-color: #80DEEA;
+    cursor: pointer;
+    color: white;
+    text-transform: lowercase;
+    max-width: 25%;
+    float: right;
+}
+
+input[type="submit"]:hover {
+    border-color: #3F51B5;
+    background-color: #80DEEA;
+}
+
+input:focus {
+    outline: 0;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="text"]:focus,
+input[type="email"]:focus {
+    color: #3F51B5;
+    border-color: #3F51B5;
+}
+
+section.subscribe h4{
+    font-size: 24px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+    margin: 0.5rem;
+    padding: 8rem;
+}
+.subscribe form{
+    margin-top: 03%;
+    
+}
+
+.subscribe img{
+    margin-left: 43%;
+    height: 12vh;
+    margin-top: -10%;
+}
 /*Footer styling*/
 
 footer li{
@@ -583,10 +658,7 @@ footer a{
 }
 
 /*Mobile*/
-@media only screen and (max-width: 768px) {
-    body{
-
-    }
+@media only screen and (max-width: 1024px){
     
     .anime-image-wrapper {
         display: none;
@@ -609,8 +681,8 @@ footer a{
     }
 
      section.hero .download-buttons{
-        margin-top: 25%;
-        margin-right: 3%;
+        margin-top: 10%;
+        margin-right: 10%;
         position: relative;
     }
 
@@ -625,10 +697,8 @@ footer a{
         height: 100%;
         opacity: 0.6;
         position: absolute;
-       
     }
 
-   
 
     .phone-video-wrapper{
         width: 70%;
@@ -645,8 +715,12 @@ footer a{
 
     section.about h2{
         
-        margin-top: 14%;
+        margin-top: 20%;
         margin-left: 40%;
+    }
+
+    .boxed{
+        margin-top: 30%;
     }
 
 
@@ -656,13 +730,13 @@ footer a{
     }
 
     .story1 #intro{
-        margin-top: 17%;
-        margin-left: 25%;
+        margin-top: 09%;
+        margin-left: 30%;
     }
 
     .story1 #name{
         margin-top: -3%;
-        margin-left: 25%;
+        margin-left: 30%;
     }
 
     footer{
@@ -674,6 +748,13 @@ footer a{
     }
 
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+
+
+}
+
 
 /* ==========================================================================
    Helper classes

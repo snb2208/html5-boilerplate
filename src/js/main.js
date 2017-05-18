@@ -1,6 +1,6 @@
 console.log('Hello world!');
 
-
+var isMenuOpen = false;
 
 //Hamburger menu animate to close button
 $( ".hamburger" ).click(function() {
@@ -9,11 +9,15 @@ $( ".hamburger" ).click(function() {
   console.log(isOpen)
   if (isOpen) {
   	$('nav.menu').show();
-  	/*$('body').css('overflow', 'hidden');*/
+  	$('body').css({'overflow': 'hidden'});
   } else {
   	$('nav.menu').hide();
-
+  	$('body').css({'overflow': 'scroll'});
   }
+});
+
+$('nav ul li').click(function(){
+	$('body').css({'overflow': 'scroll'});
 });
 
 
