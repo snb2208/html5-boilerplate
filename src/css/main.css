@@ -99,7 +99,7 @@ section.home{
 }
 
 
-
+/*Top bar with menu icon*/
 section.head-wrapper{
     background: #3F51B5;
     width: 100%;
@@ -122,6 +122,21 @@ section.head-wrapper{
 .head h1 a{
     text-decoration: none;
     color: white;
+}
+
+/*Vertical menu bar*/
+nav.menu {
+    display: none;
+    right: 10px;
+    position: fixed;
+    /*top: 0;
+    left: 0;
+    right: 0;*/
+    background-color: #3F51B5;
+    opacity: 0.95;
+    width: 45%;
+    height: 85vh;
+    z-index: 9998;
 }
 
 nav.menu li{
@@ -150,25 +165,9 @@ nav.menu li a{
     
 }
 
-nav.menu {
-    display: none;
-    right: 10px;
-    position: fixed;
-    /*top: 0;
-    left: 0;
-    right: 0;*/
-    background-color: #3F51B5;
-    opacity: 0.95;
-    width: 45%;
-    height: 85vh;
-    z-index: 9998;
-}
 
-/*section.Hill-image img{
-    width: 45%;
-    height: 700px;
 
-}*/
+
 
 section.head>div{
     height: 50px;
@@ -204,6 +203,7 @@ section.hero h2 {
     right: 200px;
 }
 
+/*Hamburger menu and animation to close icon*/
 .hamburger{
     position: relative;
     width: 35px;
@@ -283,6 +283,9 @@ section.hero {
 
 }
 
+
+
+/*Moving images and their hover actions*/
 .hero .anime-image-wrapper{
     position: absolute;
 }
@@ -352,6 +355,7 @@ section.hero {
 }
 
 
+/*video and download buttons*/
 section.hero section.right {
     float: left;
     display: block;
@@ -378,7 +382,7 @@ section.hero section.right {
     
 }
 
-
+/*Video container*/
 .phone-video-wrapper {
     position: relative;
     margin-top: 6px;
@@ -468,6 +472,7 @@ section.about{
     position: absolute;
 }
 
+/*Team members pic*/
 .team-images #sin{
     max-width: 100%;
     width: 18vh;
@@ -659,9 +664,11 @@ footer a{
     text-decoration: none;
 }
 
-/*Mobile*/
+/*iPad responsive*/
 @media only screen and (max-width: 1024px){
     
+
+    /*home page styling*/
     .anime-image-wrapper {
         display: none;
     }
@@ -711,6 +718,7 @@ footer a{
 
     }
 
+    /*About page styling*/
     .team-images {
         display: none;
     }
@@ -725,7 +733,7 @@ footer a{
         margin-top: 30%;
     }
 
-
+    /*Page 3 user stories styling*/
     .story1{
         width: 80%;
         margin-top: 50%;
@@ -741,6 +749,7 @@ footer a{
         margin-left: 30%;
     }
 
+    /*Subscribe page*/
     input[type="submit"]{
         max-width: 100%;
     }
@@ -755,11 +764,7 @@ footer a{
 
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
 
-
-
-}
 
 
 /* ==========================================================================

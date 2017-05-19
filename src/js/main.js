@@ -26,7 +26,7 @@ $(document).ready(function() {
 
 
 
-//Message display on hover over images in Home page
+	//Message display on hover over images in Home page
 	$(".anime-image-wrapper img").hover(hoverIn, hoverOut);
 
 	function hoverIn(){
