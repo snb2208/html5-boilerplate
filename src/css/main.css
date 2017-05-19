@@ -564,7 +564,8 @@ section.about{
     width: 40%;
 }
 
-/*Page 4 styling*/
+/*Page 4 -subscription page styling*/
+
 section.subscribe{
     height: 100vh;
     background: #3F51B5;
@@ -591,6 +592,7 @@ input[type="submit"] {
 input[name="msg"]{
     line-height: 4;
 }
+
 input[type="submit"] {
     border-color: #80DEEA;
     background-color: #80DEEA;
@@ -737,6 +739,10 @@ footer a{
     .story1 #name{
         margin-top: -3%;
         margin-left: 30%;
+    }
+
+    input[type="submit"]{
+        max-width: 100%;
     }
 
     footer{
